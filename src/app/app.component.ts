@@ -54,24 +54,26 @@ export class AppComponent  {
       if(a >= b)
       {
         let d = a;
+        let e = b;
       }
       else{
         let d = b;
+        let e = a;
       }
 
       for (let i = 0; i < d; i++)
       {
         row = "";
 
-        if (i < b)
+        if (i < d)
         {
-          for(let j = 0; j < b-i; j++)
+          for(let j = 0; j < d-i; j++)
           {
             row += "*";
           }
         }
 
-        if(i < a)
+        if(i < e)
         {
           for(let j = 0; j <= i; j++)
           {
