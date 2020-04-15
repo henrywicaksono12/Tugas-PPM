@@ -1,4 +1,27 @@
-<hello name="{{ name }}"></hello>
 <p>
-  Start editing to see some magic happen :)
+  Input 1 : 
+  <input [(ngModel)] = "a" type="number">
+
+  <br><br>
+
+  Input 2 : 
+  <input [(ngModel)] = "b" type="number">
 </p>
+
+<button (click) = "start(a, b)">Generate</button>&nbsp; &nbsp;
+<button (click) = "clear(a, b)">Clear</button>
+
+<div *ngIf = "hasil != 0">
+  <br>
+  Hasil : {{ hasil }}
+</div>
+
+<div *ngIf = "hasil != 0">
+  <br>
+  Pola :
+  <br><br>
+</div>
+
+<div *ngFor = "let row of pola">
+  {{row}}
+</div>
