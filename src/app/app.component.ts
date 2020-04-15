@@ -68,6 +68,13 @@ export class AppComponent  {
         this.pola.push(row);
       }
     }
+
+    if(a == null || b == null)
+    {
+      this.pola = [];
+      this.hasil = 0;
+      this.pola.push("Input the numbers first");
+    }
   }
 
   clear(a, b){
