@@ -24,9 +24,18 @@ export class AppComponent  {
 
     if(this.hasil % 2 == 0)
     {
-      this.jenis = "A";
+      if(a >= b)
+      {
+        let d = a;
+      }
+      else
+      {
+        let d = b;
+      }
 
-      for (let i = b; i <= c; i++)
+      this.jenis = "B";
+
+      for (let i = d; i <= c; i++)
       {
         row = "";
 
@@ -40,7 +49,7 @@ export class AppComponent  {
     }
     else
     {
-      this.jenis = "B";
+      this.jenis = "A";
 
       if(a >= b)
       {
