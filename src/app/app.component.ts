@@ -13,6 +13,7 @@ export class AppComponent  {
   b = null;
   hasil = 0;
   pola = [];
+  jenis = "";
 
   start(a, b){
     let c = Math.pow(a, b);
@@ -23,6 +24,8 @@ export class AppComponent  {
 
     if(this.hasil % 2 == 0)
     {
+      this.jenis = "A";
+
       for (let i = b; i <= c; i++)
       {
         row = "";
@@ -37,6 +40,8 @@ export class AppComponent  {
     }
     else
     {
+      this.jenis = "B";
+
       if(a >= b)
       {
         let d = a;
